@@ -75,6 +75,8 @@ View data visualization in advance to help you quickly understand a dataset and 
 
 You could prepare your data for model training quickly by using the following functions. 
 
+> *The following functions are only available among personal datasets, not open datasets.*
+
 - **Filter** [📖](https://docs.graviti.com/guide/tensorbay/data/filter) 
 - **Merge**[📖](https://tensorbay-python-sdk.graviti.com/en/stable/quick_start/examples/move_and_copy.html) 
 - **Move and Copy** [📖](https://tensorbay-python-sdk.graviti.com/en/stable/quick_start/examples/move_and_copy.html)
