@@ -180,16 +180,16 @@ We recommend enabling [cache](https://tensorbay-python-sdk.graviti.com/en/stable
 ```
 from paddle.io import Dataloader,Dataset
 from PIL import Image
-from tensorbay.dataset import  Dataset as TensorBay Dataset
+from tensorbay.dataset import Dataset as TensorBayDataset
 
 class DogsVSCatsSegment(Dataset):
 ##class for wrapping a DosVsCats segment
 
-    def __init__(self, gas, segment_name, transfors):
-        super().__inint__()
+    def __init__(self, gas, segment_name, transform):
+        super().__init__()
         self.dataset = TensorBayDataset('DogsVsCats', gas)
         self.dataset.enable_cache() ## launch cache
-        self.segment = self.dataset{segment_name}
+        self.segment = self.dataset[segment_name]
         self.category_to_index = self.dataset.catalog.clasification.get_category_to_index()
         self.transform = transform
         print(self.datasdt.cache_enabled) ## confirm if cached has been launched
